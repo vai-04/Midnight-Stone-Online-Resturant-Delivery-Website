@@ -40,4 +40,5 @@ ii. **Live Order Tracking:** Once authentication is live, a real-time status bri
 iii. **Image Integration:** Transitioning from a minimalist text-only menu to a high-fidelity gallery featuring compressed, lazy-loaded images of the "House Signatures".
 
 ## 🖋️ License
-This project was created as a poetic and painful (often painful and poetic go hand in hand :) exploration of web architecture.
+This project was created as a poetic and painful (often the painful and poetic go hand in hand :) exploration of web architecture.
+
