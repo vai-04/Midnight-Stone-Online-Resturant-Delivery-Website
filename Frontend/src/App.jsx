@@ -206,13 +206,11 @@ const CartPage = ({ cart, addToCart, removeFromCart, placeOrder, showNotificatio
 };
 
 // --- OWNER PAGE ---
-const OwnerPage = ({ menuItems, incomingOrders, resolveOrder, addMenuItem, removeMenuItem }) => {
+const OwnerPage = ({ menuItems, incomingOrders, resolveOrder, addMenuItem, removeMenuItem, fetchMenuItems }) => {
   useEffect(() => {
-    fetch('http://localhost:3000/api/menu')
-      .then(res => res.json())
-      .then(setMenuItems);
+    fetchMenuItems();
   }, []);
-  const [showAdd, setShowAdd] = useState(false);
+    const [showAdd, setShowAdd] = useState(false);
   const [showRemove, setShowRemove] = useState(false);
   
   // New Item State (Included Category)
@@ -457,7 +455,7 @@ function App() {
                 showNotification={setNotification}
             />
         } />
-        <Route path="/owner" element={<OwnerPage menuItems={menuItems} incomingOrders={incomingOrders} resolveOrder={resolveOrder} addMenuItem={addMenuItem} removeMenuItem={removeMenuItem} />} />
+        <Route path="/owner" element={<OwnerPage menuItems={menuItems} incomingOrders={incomingOrders} resolveOrder={resolveOrder} addMenuItem={addMenuItem} removeMenuItem={removeMenuItem} fetchMenuItems={fetchMenuItems}/>} />
       </Routes>
 
       {notification && (
