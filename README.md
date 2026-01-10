@@ -1,5 +1,11 @@
 # 🌙 Midnight Stone: A Digital Culinary Experience
 
+---
+# NOTE: Master Branch doesn't work!! Check Out 'Main' Branch to experience this project in all its capacity🙏🏻🙏🏻.
+
+## Reason: Due to my first time working with React and Express, in the final folder setups(splitting frondend and backend into seperate folders, npm is not initialized in Backend and a bug arises after intializing it which I have solved and Uploaded in the "Main" Branch). 
+
+---
 **Midnight Stone** is a basic full-stack online food ordering web interface. It features a live-updating menu for customers and a "Kitchen Command" dashboard for owners to manage trends and orders.
 
 ## 🛠️ Tech Stack
@@ -41,4 +47,5 @@ iii. **Image Integration:** Transitioning from a minimalist text-only menu to a 
 
 ## 🖋️ License
 This project was created as a poetic and painful (often the painful and poetic go hand in hand :) exploration of web architecture.
+
 
